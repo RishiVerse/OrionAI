@@ -12,7 +12,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.hero {
+  min-height: calc(100vh - 140px); /* Adjust based on header/footer height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-image: url("./assets/firstHuman.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.6); /* fallback if image doesn't load */
+  background-blend-mode: overlay; /* adds a dark overlay for readability */
+}
 a {
   font-weight: 500;
   color: #646cff;
